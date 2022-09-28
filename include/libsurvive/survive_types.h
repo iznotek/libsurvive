@@ -31,10 +31,10 @@ extern "C" {
 #endif
 #endif
 
-#define float_format "%+e"
-#define double_format "%+le"
+#define float_formater "%+e"
+#define double_formater "%+le"
 
-#define _FLT_format2(f) f##_format
+#define _FLT_format2(f) f##_formater
 #define _FLT_format(f) _FLT_format2(f)
 #define FLT_format _FLT_format(FLT)
 
@@ -68,9 +68,9 @@ extern "C" {
 #define SurvivePose_format Point3_format "\t" Quat_format
 #define SurviveVel_format Point3_format "\t" Point3_format
 
-#define float_sformat "%f"
-#define double_sformat "%lf"
-#define _FLT_sformat2(f) f##_sformat
+#define float_sformater "%f"
+#define double_sformater "%lf"
+#define _FLT_sformat2(f) f##_sformater
 #define _FLT_sformat(f) _FLT_sformat2(f)
 #define FLT_sformat _FLT_sformat(FLT)
 
